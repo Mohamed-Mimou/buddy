@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Educational Information</title>
+    </head>
+    <body>
+        <button id="back-button">BACK</button>
+        <div class="container">
+            <form id="eduinfo-form">
+                <div class="group">
+                    <label for="group-label" class="group-label">Group Label</label>
+                    <input type="text" id="group-label" name="group-label" class="group-content" required>
+                </div>
+                <div class="group">
+                    <label for="topic" class="group-label">Topic</label>
+                    <input type="text" id="topic" name="topic" class="group-content" required>
+                </div>
+                <div class="group">
+                    <label for="description" class="group-label">Description</label>
+                    <textarea id="description" name="description" class="group-content" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="submit-button">SUBMIT</button>
+            </form>
+        </div>
+    </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6C63FF; /* Blue border */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        #back-button {
+            background-color: #A3E4A5; /* Light green */
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            align-self: flex-start;
+        }
+        .container {
+            background-color: white;
+            width: 80%;
+            max-width: 1300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: 800px; /* Scrollable content */
+        }
+        .group {
+            margin-bottom: 20px;
+        }
+        .group-label {
+            background-color: #A3E4A5; /* Light green */
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1.5em; /* Increase font size */
+        }
+        .group-content {
+            background-color: #E0E0E0; /* Grey content box */
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 1.2em; /* Increase font size */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #submit-button {
+            background-color: #A3E4A5; /* Light green */
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.getElementById("back-button").addEventListener("click", function () {
+            alert("Going back to the previous page.");
+            window.location.href = "HomePage.html";
+        });
+
+        document.getElementById("eduinfo-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Educational information submitted.");
+            // Here you can add code to handle the form submission, e.g., send the data to a server
+        });
+    </script>
+</html>

@@ -155,52 +155,7 @@ h2 {
     text-decoration: underline;
 
 } 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - Buddy</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="container">
-<h2>Welcome to Buddy</h2>
-<div class="box">
-<h3>Login</h3>
-<p>What can I call you?</p>
-<input type="text" placeholder="Username">
-<p>What is our secret code?</p>
-<input type="password" placeholder="Password">
-<button>Submit</button>
-<p class="switch">Don't have an account? <a href="register.html">Register with us</a></p>
-</div>
-</div>
-</body>
-</html> 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register - Buddy</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="container">
-<h2>Register with your Buddy</h2>
-<div class="box">
-<h3>Register</h3>
-<p>What can I call you?</p>
-<input type="text" placeholder="Username">
-<p>What is our secret code?</p>
-<input type="password" placeholder="Password">
-<button>Submit</button>
-<p class="switch">Have an account already? <a href="login.html">Login with us</a></p>
-</div>
-</div>
-</body>
-</html> 
+
 /* Import Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
