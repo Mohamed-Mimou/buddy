@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write in Your Journal</title>
+   
+</head>
+<body>
+    <div class="container">
+        <button class="back-button">BACK</button>
+        <div class="header">
+            <div class="day-box">week day</div>
+            <div class="date-box">xx/xx/xxxx</div>
+            <div class="time-box">HH:MM</div>
+        </div>
+        <div class="text-area">
+            <label for="w3review"></label>
+            <textarea id="w3review" name="w3review" rows="20" cols="60"> you are free to write what you want</textarea>
+        </div>
+    </div>
+</body>
+<style>
+            /* Set background color for the whole page */
+        body {
+            background-color: #A0D785; /* Light green */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container box */
+        .container {
+            background-color: #7878E0; /* Light blue */
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Style for the BACK button */
+        .back-button {
+            background-color: #C8E6C9; /* Light green */
+            border: none;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        /* Header section (week day, date, time) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        /* Style for the date, day, and time boxes */
+        .day-box, .date-box, .time-box {
+            background-color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Text area styling */
+        .text-area {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            min-height: 200px;
+            text-align: left;
+            font-size: 16px;
+        }
+</style>
+</html>
+
+
